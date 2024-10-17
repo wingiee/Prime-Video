@@ -1,0 +1,135 @@
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #00050d;
+}
+.logo{
+    height: 10vh;
+    background-color: black;
+    width: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    /* width: 90%; */
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    position: fixed;
+    z-index: 100;
+    opacity: 0.8;
+
+}
+#container .header-left{
+    width: 70%;
+}
+#container.header-right{
+    width: 30%;
+}
+.header-left{
+    /* background-color: aqua; */
+    border-radius: 10px;
+    display: flex;
+    /* width: 60%; */
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+    /* width: 40%; */
+    /* background-color: bisque; */
+}
+.header-right i{
+    color: white;
+    size: 1rem;
+    padding: 10px 5px;   
+}
+.header-right>div{
+    width: 38px;
+    height: 40px;
+}
+.button{
+    font-size: 1rem;
+    border: none;
+    padding: 10px 12px;
+    margin: 1rem 1rem;
+    color: white;
+    border-radius: 10px;
+    opacity: 1;
+    font-weight: 700;
+}
+.button:hover{
+    background-color: rgb(239, 232, 232);
+    color: black;
+}
+.header-right i:hover{
+    opacity: 1;
+    background-color: rgb(239, 232, 232);
+    color: black;
+}
+body {
+    overflow-x: hidden;
+}
+img {
+    width: 100%;
+    height: 70vh;
+}
+.carousel {
+    width: 500%;
+    animation: carousel 10s infinite linear;
+}
+.slide {
+    display: inline-block;
+    width: 20%;
+    margin: 0px -2px;
+}
+
+@keyframes carousel {
+    0%,15% {
+        transform: translateX(0%);
+    }
+    20%,35% {
+        transform: translateX(-20%);
+    }
+    40%,55% {
+        transform: translateX(-40%);
+    }
+    60%,75% {
+        transform: translateX(-60%);
+    }
+    80%,100% {
+        transform: translateX(-80%);
+    }
+}
+.cards{
+    display: flex;
+    padding-left: 10px;
+}
+h2{
+    color: white;
+    margin-left: 20px;
+    font-weight: 800;
+    padding: 10px;
+}
+.card{
+    margin: 15px 10px; 
+    flex-direction: column;
+    box-shadow: 0 5px 202px black;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover{
+    border: 8px solid black;
+    background-color: green;
+    opacity: 100%;
+ }
+.card img{
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+}
